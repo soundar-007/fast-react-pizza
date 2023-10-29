@@ -77,7 +77,7 @@ function CreateOrder() {
             />
           </div>
           {!address && (
-            <span className="absolute right-0.5 top-[26.5px] sm:top-[32px]">
+            <div className="absolute right-0.5 top-[4px]">
               <Button
                 disabled={isLoading}
                 type="small"
@@ -88,7 +88,7 @@ function CreateOrder() {
               >
                 Get Position
               </Button>
-            </span>
+            </div>
           )}
         </div>
 
