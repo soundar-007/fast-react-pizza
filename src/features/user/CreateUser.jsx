@@ -17,6 +17,10 @@ function CreateUser() {
     navigate("/menu");
   }
 
+  const setUserName = () => {
+    sessionStorage.setItem("loggedUserName", username);
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <p className="mb-4 text-sm text-stone-600 md:text-base">
@@ -33,7 +37,9 @@ function CreateUser() {
 
       {username !== "" && (
         <div>
-          <Button type="primary">Start ordering</Button>
+          <Button type="primary" onClick={setUserName}>
+            Start ordering
+          </Button>
         </div>
       )}
     </form>
