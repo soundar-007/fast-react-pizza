@@ -77,7 +77,7 @@ function CreateOrder() {
             />
           </div>
           {!address && (
-            <div className="absolute right-0.5 top-[4px]">
+            <div className="absolute right-0.5 top-9 sm:right-1 sm:top-1">
               <Button
                 disabled={isLoading}
                 type="small"
